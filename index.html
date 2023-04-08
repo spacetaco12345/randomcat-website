@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Cat Images</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Random Cat Images</h1>
+    <p>Click the button below to see a random image of a cat:</p>
+    <button onclick="getRandomCat()">Get Random Cat</button>
+    <div id="catImage"></div>
+    <script>
+      function getRandomCat() {
+        // Generate a random number between 1 and 500 (inclusive)
+        var randomNumber = Math.floor(Math.random() * 500) + 1;
+        // Construct the URL for the cat image API
+        var url = "https://cataas.com/cat?width=400&height=300&c=" + randomNumber;
+        // Create a new image element and set its source to the API URL
+        var image = document.createElement("img");
+        image.src = url;
+        // Remove any existing cat image from the page
+        var catImage = document.getElementById("catImage");
+        catImage.innerHTML = "";
+        // Add the new cat image to the page
+        catImage.appendChild(image);
+      }
+    </script>
+    <p>Created by Raul Tovar</p>
+  </body>
+  
+</html>

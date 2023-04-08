@@ -1,0 +1,55 @@
+/* Set background color and font styles */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Center the page content */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Style the header */
+  h1 {
+    color: #333;
+    font-size: 36px;
+    margin-top: 40px;
+  }
+  
+  /* Style the button */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Style the button on hover */
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Style the cat image */
+  #catImage {
+    margin-top: 40px;
+  }
+  
+  /* Add a box shadow to the cat image */
+  #catImage img {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  /* Style the paragraph */
+  p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
